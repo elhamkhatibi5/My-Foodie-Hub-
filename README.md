@@ -4,29 +4,29 @@
 
 Below are screenshots of the project:
 
-### 🔹 Screenshot 1
-![screenshots 1](screenshots/foodiehub1.jpg.jpg)
-
-### 🔹 Screenshot 2
-![screenshots 2](screenshots/foodiehub2.jpg.jpg)
-
-### 🔹 Screenshot 3
-![screenshots 3](screenshots/foodiehub3.jpg.jpg)
-
-### 🔹 Screenshot 4
-![screenshots 4](screenshots/foodiehub4.jpg.jpg)
-
-### 🔹 Screenshot 5
-![screenshots 5](screenshots/foodiehub5.jpg.jpg)
-
-### 🔹 Screenshot 6
-![screenshots 6](screenshots/foodiehub6.jpg.jpg)
-
-### 🔹 Screenshot 7
-![screenshots 7](screenshots/foodiehub7.jpg.jpg)
+### 🔹 Screenshot 9
+![screenshots 9](screenshots/foodiehub9.jpg.jpg)
 
 ### 🔹 Screenshot 8
 ![screenshots 8](screenshots/foodiehub8.jpg.jpg)
 
-### 🔹 Screenshot 9
-![screenshots 9](screenshots/foodiehub9.jpg.jpg)
+### 🔹 Screenshot 7
+![scscreenshot7](screenshots/foodiehub7.jpg.jpg)
+
+### 🔹 Screenshot 6
+![screenshots 6](screenshots/foodiehub6.jpg.jpg)
+
+### 🔹 Screenshot 5
+![screenshots 5](screenshots/foodiehub5.jpg.jpg)
+
+### 🔹 Screenshot 4
+![screenshots 4](screenshots/foodiehub4.jpg.jpg)
+
+### 🔹 Screenshot 3
+![screenshots 3](screenshots/foodiehub3.jpg.jpg)
+
+### 🔹 Screenshot 2
+![screenshots 2](screenshots/foodiehub2.jpg.jpg)
+
+### 🔹 Screenshot 1
+![screenshots 1](screenshots/foodiehub1.jpg.jpg)
