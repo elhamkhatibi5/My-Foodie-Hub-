@@ -1,0 +1,345 @@
+
+
+/* General Setup */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h5 {
+  color: #ffc107;
+  text-shadow:
+    0 0 5px #ffc107aa,
+    0 0 10px #ffc107bb,
+    0 0 20px #ffc107cc;
+}
+
+a {
+  color: #ffc107;
+  text-decoration: none;
+  position: relative;
+}
+a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+a:hover::after {
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  .navbar {
+    background-color: #2e2a1f !important;
+  }}
+.navbar .nav-link {
+  color: #ddd;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffc107;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffc107 !important;
+}
+
+/* Hamburger Toggle Button */
+/* ⚠️ WARNING ⚠️
+ * To ensure the hamburger menu icon is clearly visible,
+ * the navbar-toggler background MUST be transparent,
+ * and the hamburger lines MUST be colored yellow (#ffc107).
+ * Otherwise, the icon may appear black or invisible on dark backgrounds.
+ */
+ 
+ .navbar-toggler {
+  border-color: #ffc107 !important; /* yellow border */
+  background-color: transparent !important; /* no background */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  filter: none !important;
+}
+.navbar-toggler {
+  border-color: #ffc107 !important; /* Yellow border */
+}
+
+/* Hamburger Icon - Always Yellow */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Collapsed menu links */
+.navbar-collapse .nav-link {
+  color: #fff !important; /* Make the links white */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #ffc107 !important; /* Yellow hover effect */
+  background-color: #2a2a2a;
+}
+
+/* Hero Section */
+.hero-section img {
+  animation: floatImg 6s ease-in-out infinite;
+  border-radius: 15px;
+  max-height: 380px;
+}
+@keyframes floatImg {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.hero-section h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(
+    90deg,
+    #ffc107,
+    #fff176,
+    #ffc107,
+    #fff176,
+    #ffc107
+  );
+  background-size: 300% 300%;
+  animation: shineGradient 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+@keyframes shineGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Hero section image styling */
+.hero-section img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid #ffc107;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255, 193, 7, 0.5);
+  animation: floatImage 6s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 50px rgba(255, 193, 7, 0.7);
+}
+
+/* Buttons */
+.btn-warning {
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #ffc107;
+}
+.btn-warning:hover {
+  background-color: #e0a800;
+  color: #000;
+  animation: pulseGlow 1.5s infinite;
+  box-shadow: 0 0 20px #ffc107;
+}
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px #ffc10788;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffc107dd;
+  }
+}
+
+/* Card Base Style */
+.btn-restaurant {
+  background: linear-gradient(45deg, #ff8a00, #ffc107);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  transition: 0.4s ease;
+  box-shadow: 0 0 12px #ffc10766;
+}
+.btn-restaurant:hover {
+  background: linear-gradient(45deg, #ffc107, #ff8a00);
+  box-shadow: 0 0 20px #ffc107cc;
+  transform: scale(1.05);
+}
+
+.btn-menu {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: 0.4s ease;
+  box-shadow: 0 0 12px #00c6ff99;
+}
+
+Elham khatibi, [7/8/2025 9:00 AM]
+.btn-menu:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 20px #00c6ffcc;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  background-color: #1e1e1e;
+  border: 2px solid #ffc107;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #fff176;
+  box-shadow:
+    0 0 10px #ffc107aa,
+    0 0 20px #ffc107aa,
+    0 0 30px #ffc107cc,
+    0 4px 20px rgba(255, 193, 7, 0.6);
+}
+.card-title {
+  color: #ffc107;
+  font-size: 1.1rem;
+}
+.card-text {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+.card:hover .card-img-top {
+  filter: brightness(1.1) contrast(1.1);
+  transform: scale(1.05);
+}
+
+/* Price and Badge */
+.card .fw-bold {
+  color: #ffc107;
+}
+.badge {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Section Headers */
+section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact ul li {
+  margin-bottom: 0.6rem;
+}
+#contact a {
+  color: #ffc107;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+#contact input, #contact textarea {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #444;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #ffd54f;
+  box-shadow: 0 0 8px 2px #ffc107bb;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #bbb;
+  font-size: 0.9rem;
+  padding: 15px 0;
+}
+
+/* Background gradient for body */
+body {
+  background: linear-gradient(135deg, #121212, #1a1a1a, #222222);
+  color: #fff;
+}
+/* Fix hamburger icon color to yellow */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+/* Navbar Custom Toggler + Light Gray Theme */
+.navbar {
+  background-color: #e9ecef !important;
+}
+
+.navbar .nav-link {
+  color: #333 !important;
+}rgba(51, 51, 51, 0.705)
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+}
+
+.navbar-toggler {
+  border-color: #ffc107 !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Make icon visible in light background */
+}
+@keyframes rotateAndGlow {
+  0% {
+    transform: rotate(0deg);
+    filter: drop-shadow(0 0 2px #ffc107);
+  }
+  50% {
+    transform: rotate(180deg);
+    filter: drop-shadow(0 0 8px #ffc107);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 2px #ffc107);
+  }
+}
+
+.rotate-glow {
+  animation: rotateAndGlow 4s linear infinite;
+}
