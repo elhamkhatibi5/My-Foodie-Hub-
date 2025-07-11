@@ -20,7 +20,7 @@ Below are screenshots of the project:
 ![screenshots 5](screenshots/foodiehub5.jpg.jpg)
 
 ### 🔹 Screenshot 6
-![screenshots 6](Screenshots/foodiehub6.jpg.jpg)
+![screenshots 6](screenshots/foodiehub6.jpg.jpg)
 
 ### 🔹 Screenshot 7
 ![screenshots 7](screenshots/foodiehub7.jpg.jpg)
